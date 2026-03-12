@@ -1,0 +1,34 @@
+template_file: template.xlsx
+output_file: timesheet_filled.xlsx
+
+company: "Ahoy Co., Ltd. (Headquarter)"
+name: "Ahoy Ahoy"
+role: "Ahoy Software Engineer"
+project: "Co-Delivery"
+year: 2026
+month: 3
+po_number: "PO-2026-001"
+quotation_reference: "QT-2026-001"
+
+# "ai" = use Claude API to generate descriptions
+# "list" = cycle through works list in order
+mode: list
+
+anthropic_api_key: ""
+notes: |
+  - Week 1: Setting up data pipeline for new feature
+  - Week 2: Sprint review, bug fixes on ETL process
+  - Week 3: Dashboard development with Metabase
+  - Week 4: Performance optimization and documentation
+
+works:
+- "Development and testing on Co-Delivery project"
+- "Bug fixing and code review"
+- "Feature implementation and documentation"
+- "API development and integration testing"
+- "Sprint tasks and team collaboration"
+- "Data pipeline maintenance and monitoring"
+- "Database optimization and query tuning"
+- "Unit testing and QA"
+- "Technical documentation and knowledge sharing"
+- "Deployment and release management"
