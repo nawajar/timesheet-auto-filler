@@ -17,11 +17,23 @@ predefined list or AI-generated content.
    cd timesheet-filler
    ```
 
-2. Install dependencies:
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+## Installation
+
+### With Make
+
+```bash
+make install
+```
+
+### Without Make
+
+```bash
+python3 -m venv venv
+source venv/bin/activate  # macOS/Linux
+venv\Scripts\activate     # Windows
+pip install -r requirements.txt
+```
 
 ## Configuration
 
@@ -69,6 +81,13 @@ notes: |
 
 ```bash
 python fill_timesheet.py
+```
+
+### With Make
+
+```bash
+make run       # fill timesheet
+make clean     # delete output 
 ```
 
 ### Example Output
