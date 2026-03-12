@@ -167,15 +167,15 @@ def main():
     mode = cfg.get("mode", "random")
     month_abbr = calendar.month_abbr[cfg["month"]]
 
-    print(f"📋 Timesheet: {cfg['name']} | {month_abbr} {cfg['year']}")
-    print(f"🏢 {cfg['company']}")
-    print(f"💼 {cfg['role']} — {cfg['project']}")
-    print(f"⚙️  Mode: {mode}")
+    print(f"🔥 Timesheet: {cfg['name']} | {month_abbr} {cfg['year']}")
+    print(f"{cfg['company']}")
+    print(f"{cfg['role']} — {cfg['project']}")
+    print(f"Mode: {mode}")
     print()
 
-    print("🤖 Generating descriptions..." if mode == "ai" else "🎲 Picking from works list...")
+    print("Generating descriptions..." if mode == "ai" else "🎲 Picking from works list...")
     descriptions = generate_descriptions(cfg)
-    print(f"📝 Generated {len(descriptions)} workday descriptions")
+    print(f"Generated {len(descriptions)} workday descriptions")
     print()
 
     for date_key in sorted(descriptions.keys()):
